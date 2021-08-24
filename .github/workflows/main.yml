@@ -1,0 +1,6 @@
+master:
+  script:
+        - echo "Build master"
+        - ssh root@$SERVER -p 23022 'bash /var/www/html/test/deploy.sh'
+  only:
+      - master
